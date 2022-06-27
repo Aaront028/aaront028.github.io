@@ -1,5 +1,7 @@
 * {
-  border: 1px solid red;
+  margin:0;
+  padding:0;
+  /* border: 1px solid red; */
 }
 
 body {
@@ -10,16 +12,29 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+
 }
 
-ul {
-  display: flex;
-  flex-direction: row;
+.navbar {
+  position: fixed;
+  width: 100%;
+  max-height: 80px;
+  background-color: #fff
 }
 
-li {
-  list-style: none;
-  margin: 0 5px 0 5px
+.hero-image {
+  background-image: url("../image/programmer.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 80vh;
+  min-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .hero-image {
@@ -27,3 +42,40 @@ li {
   height: auto;
 }
 
+ul {
+  margin:0;
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  height:100%;
+  list-style: none;
+  margin: 0 10px 0 10px;
+  padding: 10px 10px;
+}
+
+@keyframes button-hover {
+  0%    { opacity: 0; }
+  20%   { opacity: 0.2; }
+  80%   { opacity: 0.6; }
+  100%  { opacity: 1; }
+}
+
+li:hover {
+  animation: button-hover 0.5s;
+  background-color: aqua;
+  color:rgb(15, 15, 15)
+}
+
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+
+.footer {
+  color: grey;
+  text-align: center;
+}
