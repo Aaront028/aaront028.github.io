@@ -34,8 +34,8 @@ nav {
 }
 
 @media only screen and (max-width: 320px) {
-  .hero-image{
-       background-attachment:scroll;
+  .hero-image {
+    background-attachment:scroll;
   }
 }
 
