@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/main.css">
-    <title>Aaron Tan - Technical</title>
+    <title>Aaron Tan - Technical Blog</title>
   <body>
     <div class="navbar">
       <nav>
@@ -27,9 +27,9 @@
           <li><a href="../documentation.html">Documentation</a></li>
   
           <div class="dropdown">
-            <li>Technical</li>
+            <li>Technical blog</li>
             <div class="dropdown-sprint">
-              <li class="li"><a href="htmlcss.html">HTML & CSS</a></li>
+              <li class="li"><a href="html-css.html">HTML & CSS</a></li>
             </div>
             
         </ul>
@@ -39,25 +39,51 @@
    <!-- <h1>hello</h1> -->
   </div>
     <div class="main-container">
-    <h1>Technical - HTML & CSS</h1> 
+    <h1>Technical Blog - HTML & CSS</h1> 
    
-    <p> This is the beginning of my website home page.</p>
-   
-    <h2>My Web Foundation Blog</h2>
+    <p> Position properties controls how elements on websites are positioned
 
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi deleniti nemo quibusdam corporis
-    autem voluptas sit distinctio culpa. Repellat ducimus quibusdam veniam voluptate rem ea error 
-    cupiditate laboriosam repudiandae ut, cumque dolor tempora excepturi quas fugit asperiores assumenda
-    inventore at perferendis molestiae blanditiis quae voluptates? Animi eligendi necessitatibus ea
-    voluptates!</p>
-
-    <h2><a href="blog.html">Stories and Legends </a></h2>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi deleniti nemo quibusdam corporis
-  autem voluptas sit distinctio culpa. Repellat ducimus quibusdam veniam voluptate rem ea error 
-  cupiditate laboriosam repudiandae ut, cumque dolor tempora excepturi quas fugit asperiores assumenda
-  inventore at perferendis molestiae blanditiis quae voluptates? Animi eligendi necessitatibus ea
-  voluptates!</p>
-
+      There are 5 values in the position properties
+      static, relative, fixed, absolute and sticky
+      
+      In this article we'll talk about absolute, relative and fixed positioning and how they're different.
+      
+      For the purpose of understanding these three positions, we'll need to briefly explain how static 
+      positioning works. By default the document flow will automatically assign your element as static,
+       which is the normal flow of a document. Elements are laid out in blocks stacked from top to bottom 
+       unless we specifically assign positions to them. 
+      
+      Within the position element you can also use the properties top, right, left and bottom to lay out
+       your elements to where you want them placed.
+      
+      **image placed**
+      
+      The top and bottom affects vertical position of an element
+      
+      **image placed**
+      
+      right and left affects horizontal position of an element
+      
+      As mentioned above all elements are "position: static" by default. All of the positions below can be 
+      moved with the properties top, right, left and bottom.
+      
+      Relative = Appears in its original position, One thing to note is that this activates the z-index which
+      means you can place an element overlapping another elements or underneath other elements. By default
+      this position will automatically have the z-index property to over lap. It also activates the scope of 
+      absolute positioning mentioned below. 
+      
+      **insert image**
+      
+      Absolute = This value is usually removed from the flow relative to its original OR the closest parent 
+      other than the position static. If there are no parent positions it will move along to the body document 
+      and position from there. Using the properties top, right, left and bottom will position the element 
+      exactly where you want.
+      
+      Fixed = This is when the element is fixed to the viewport (size of screen), meaning if you add 
+      "bottom: 0;" this will place the element on the bottom of the page even if you scroll it will 
+      still be there but wont be in sight if you have a lot of content written and scrolled to the top 
+      of the page. Fixed positions are often used to place a footer at the bottom of the page.</p>
+    
 </div>
 <footer>
   <p class="footer">created by © Aaron Tan</p>
