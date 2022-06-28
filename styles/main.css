@@ -14,7 +14,6 @@ nav {
   flex-direction: column;
   align-items: flex-end;
   max-height: 80px;
-
 }
 
 .navbar {
@@ -37,6 +36,15 @@ nav {
 @media only screen and (max-width: 400px) {
   .hero-image {
     background-attachment:scroll;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-height: 80px;
+    font-size: 10px;
+  
   }
 }
 
