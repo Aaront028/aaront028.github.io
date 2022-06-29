@@ -157,12 +157,14 @@ li:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  padding: 0 5%;
 }
 
 .captioned {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  padding:0 5%;
 }
 
 
