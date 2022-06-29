@@ -6,7 +6,15 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  line-height: 2;
+  line-height: 1.6;
+}
+
+h1 {
+  padding-bottom: 20px;
+}
+
+p {
+  padding: 15px 0;
 }
 
 nav {
@@ -113,6 +121,37 @@ li:hover {
   display: flex;
   flex-direction: column;
   padding: 5%;
+}
+
+.byside {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.captioned {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+.imgdesc {
+  max-width: 200px;
+  max-height: auto;
+}
+
+code {
+  display: block;
+  background-color: #f7f7f7;
+  padding: 15px;
+  position: relative;
+  white-space: pre-line;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  margin: 10px;
+  border-radius: 5px;
 }
 
 .footer {

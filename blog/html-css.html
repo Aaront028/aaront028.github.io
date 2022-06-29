@@ -41,49 +41,63 @@
     <div class="main-container">
     <h1>Technical Blog - HTML & CSS</h1> 
    
-    <p> Position properties controls how elements on websites are positioned
-
-      There are 5 values in the position properties
-      static, relative, fixed, absolute and sticky
+    <h2>What are the differences between relative, absolute, and fixed positioning?</h2>
+    <p> Position properties controls how elements on websites are positioned. There are 5 values in the position properties
+      static, relative, fixed, absolute and sticky. </p>
       
-      In this article we'll talk about absolute, relative and fixed positioning and how they're different.
+      <p>In this article we'll talk about absolute, relative and fixed positioning and how they're different.</p>
       
-      For the purpose of understanding these three positions, we'll need to briefly explain how static 
+      <p>For the purpose of understanding these three positions, we'll need to briefly explain how static 
       positioning works. By default the document flow will automatically assign your element as static,
        which is the normal flow of a document. Elements are laid out in blocks stacked from top to bottom 
-       unless we specifically assign positions to them. 
+       unless we specifically assign positions to them.</p>
       
-      Within the position element you can also use the properties top, right, left and bottom to lay out
-       your elements to where you want them placed.
+      <p>Within the position element you can also use the properties top, right, left and bottom to lay out
+       your elements to where you want them placed.</p>
+      <div class="byside">
+       <div class="captioned">
+      <img class="imgdesc" src="../image/vertical.png" alt="red square describing 50px from top">
       
-      **image placed**
+      <p><em>The top and bottom affects vertical position of an element</em></p>
+     </div>
+
+     <div class="captioned">
+      <img class="imgdesc" src="../image/horizontal.png" alt="red square describing 50px from left">
       
-      The top and bottom affects vertical position of an element
+      <p><em>right and left affects horizontal position of an element</em></p>
+    </div>
+  </div>
+      <p>As mentioned above all elements are "position: static" by default. All of the positions below can be 
+      moved with the properties top, right, left and bottom.</p>
       
-      **image placed**
-      
-      right and left affects horizontal position of an element
-      
-      As mentioned above all elements are "position: static" by default. All of the positions below can be 
-      moved with the properties top, right, left and bottom.
-      
-      Relative = Appears in its original position, One thing to note is that this activates the z-index which
+      <p><strong>Relative</strong> Appears in its original position, One thing to note is that this activates the z-index which
       means you can place an element overlapping another elements or underneath other elements. By default
       this position will automatically have the z-index property to over lap. It also activates the scope of 
-      absolute positioning mentioned below. 
+      absolute positioning mentioned below.</p>
       
-      **insert image**
-      
-      Absolute = This value is usually removed from the flow relative to its original OR the closest parent 
+      <p><strong>Absolute</strong> This value is usually removed from the flow relative to its original OR the closest parent 
       other than the position static. If there are no parent positions it will move along to the body document 
       and position from there. Using the properties top, right, left and bottom will position the element 
-      exactly where you want.
+      exactly where you want.</p>
       
-      Fixed = This is when the element is fixed to the viewport (size of screen), meaning if you add 
+      <p><strong>Fixed</strong> This is when the element is fixed to the viewport (size of screen), meaning if you add 
       "bottom: 0;" this will place the element on the bottom of the page even if you scroll it will 
       still be there but wont be in sight if you have a lot of content written and scrolled to the top 
       of the page. Fixed positions are often used to place a footer at the bottom of the page.</p>
-    
+      <div class="byside">
+      <img class="imgdesc" src="../image/fixed.png" alt="blue square describing 0px from bottom">
+
+      <code>    .fixed {
+        position: fixed;
+        height: 200px;
+        width: 200px;
+        background-color: blue;
+        text-align: center;
+        bottom:0;
+        color:white;
+      }
+  </code>
+    </div>    
 </div>
 <footer>
   <p class="footer">created by © Aaron Tan</p>
