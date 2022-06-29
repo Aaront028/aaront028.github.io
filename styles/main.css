@@ -35,7 +35,7 @@ nav {
   background-image: url("../image/programmer.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 99.9%;
   background-attachment: fixed;
   min-height: 80vh;
   min-width: 100%;
@@ -63,6 +63,23 @@ nav {
   background-color: rgb(0, 255, 255, 0.5);
   border-radius: 5px;
   padding: 20px;
+}
+
+.line-break-bottom {
+  border: 1px solid grey ;
+  width: 30%;
+  margin: auto;
+}
+.line-break-top {
+  border: 1px solid grey ;
+  width: 90%;
+  margin: auto;
+margin-top: 10px;
+margin-bottom: 40px;
+}
+
+.funscroll {
+  height: 100000px;
 }
 
 @media only screen and (max-width: 400px) {
