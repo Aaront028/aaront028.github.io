@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <title>Aaron Tan - Technical Blog HTML & CSS</title>
+  <body>
+    <div class="navbar">
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About me</a></li>
+          <div class="dropdown">
+          <li>Blog</li>
+          <div class="dropdown-sprint">
+            <li class="li"><a href="identity-values.html">Indentity & values</a></li>
+            <li class="li"><a href="learning-plan.html">Learning plan</a></li>
+            <li class="li"><a href="emotional-intelligence.html">Emotional intelligence</a></li>
+            <li class="li"><a href="sprint-4.html">Sprint-4</a></li>
+            <li class="li"><a href="sprint-5.html">Sprint-5</a></li>
+          </div>
+          
+        </div>
+          <div class="dropdown">
+            <li>Technical blog</li>
+            <div class="dropdown-sprint">
+              <li class="li"><a href="html-css.html">HTML & CSS</a></li>
+              <li class="li"><a href="javascript-dom.html">Javascript DOM</a></li>
+            </div>
+            
+        </ul>
+      </nav>
+  </div>
+    <div class="hero-image" id="top">
+   <!-- <h1>hello</h1> -->
+  </div>
+    <div class="main-container">
+    <h1>Technical Blog - Javascript DOM</h1> 
+    <hr class="line-break-top">
+
+   
+    <h2>
+      JavaScript and its relationship to HTML and CSS.
+    </h2>
+    <p>
+      What we see on a website compiles of HTML, CSS and Javascript. Imagine you're 
+      building a house. When you build a house you need have a foundation, then frames
+       and put the frames up etc. building this house is like HTML, it is the 
+       structure of a webpage.</p>
+
+    <p>Part of this house, you'll need to make it look good. So you start to add paint, 
+    wall paper, roof, and any kind of decoration to your house. CSS is very similar, 
+    it allows you to style your page with colours, shapes and size to your liking.</p>
+
+
+    <p>When you begin to add , bathrooms, heat pumps, oven, plumbing, electrical, and 
+    broadband into your home, you can change the type of  bathroom, oven etc 
+    by calling someone to make these changes.  Javascript allows your website to be 
+    more interactive and the ability to make changes to your HTML and CSS by accessing 
+    the DOM and the ability to call open different functionalities just like you would 
+    for calling a tradesman for your house.</p>
+      
+
+    <h2>
+      Control flow and loops
+    </h2>
+
+      <p>
+        The control flow is the document flow of your code and reading Javascript is 
+        usually from top to bottom, just like you would in a book until stated 
+        otherwise in the code. I will use the a daily life analogy to give you a 
+        fair understand of how control flow and loops work in Javascript.
+      </p>
+      
+      <p>
+        Lets say your week is like a code document. If you're working 5 days a week 
+        and start work at 8.30am and finish at 5pm this is what it would look like 
+        give or take:
+      </p>
+  
+      <p>You wake up</p>
+      <p>Freshen up</p>
+      <p>Eat breakfast</p>
+      <p>Walk the dog</p>
+
+      <p>If Monday to Friday add these to following things to do : 
+        Get ready for work, drive to work, drive the same route, work, have lunch, work until 5pm, drive back home. 
+        </p>
+
+        <p>If sick on any of these days do this:
+        Go to doctors if you're not faking it, 
+        Lie in bed, 
+        Watch Netflix and superhero shows</p>
+   
+      <p>
+        Otherwise carry on to the next part.
+        If Saturday or Sunday add these to following things to do:
+      </p>
+
+              
+      <p>
+        Sleep in
+      </p>
+
+
+      <p>
+        Watch Netflix
+      </p>
+      
+      <p>
+        Hang out with friends
+      </p>
+      
+      <p>
+        go to town
+      </p>
+      
+      <p>
+        play music
+      </p>
+
+      <p>Play games</p>
+<p>go to restaurant</p>
+<p>or become a superhero</p>
+
+<p>As you can see from the above analogy, our lives can be interpreted as code control
+   flow and loops until there are other decisions to be made then the flow changes 
+   depending on the what is happening.</p>
+
+      <h2>What is DOM and how you might interact with it</h2>
+
+      <p>What we see on a website compiles of HTML, CSS and Javascript. Each of these
+         have their own roles to play. As mentioned earlier in this article, HTML is 
+         the structure of the website, CSS styles the website and makes everything 
+         look smoking hot and Javascript is the interaction of the website and can
+         manipulate HTML elements and styles of css simply by using the DOM.</p>
+
+      <p>They all work together, you can use the Javascript DOM to play the elements 
+        on the page, do things with mouse clicks and keyboard press, control of 
+        animations, interact with your devices like webcam and microphones and a 
+        whole lot more.</p>
+
+      <h2>Array and objects</h2>
+        
+
+      <p>Arrays and objects are often used to collect and store data. You can also 
+        access them from API's but in this article we wont get into that.</p>
+
+      <p>Arrays are a list of data that are stored within a variable name and the list 
+        of data within the array is stored as a string inside a square bracket like 
+        this <strong>["person"]</strong>. You can have as many items inside the array as you want and 
+        to access them you use the square backets and the index number of where the 
+        array is positioned. In Arrays we count the first item as <strong>0</strong>, 
+        second <strong>1</strong>, third 
+        <strong>2</strong> and so on like the image below.</p>        
+      <div class="byside">
+        
+        <img class="imgdescArray" src="../image/array.png" alt="array example of positioning">
+      </div> 
+        <p>Objects are also stored inside a variable and are list of data which stores
+           key and values and they use curly backets <strong>{ }</strong>. The key and values are 
+           written as <strong> heroName: "SpiderMan" , realName: "Peter Parker"</strong>. To access 
+           them you would need to use the dot notation. So if the object name is 
+           superHero and I have the name stored inside the object. This is how I 
+           would access the super hero's real name <strong>superHero.realName.</strong> The return 
+           would be <strong>"Peter Parker"</strong>.</p>
+
+
+      <h2>Functions and why they're helpful</h2>    
+      <code>functions callMySuperhero() {
+          return "I Love " + superHero.realName;
+       } 
+  </code>
+      <p>Functions are a block of code where you can use multiple times within 
+        your program simply by calling the function name and parenthesis <strong>( )</strong> . 
+        It is very useful because you don't want to repeat big block of code that 
+        takes a long time to write, instead of copying 20 lines of code into 5 different 
+        areas, you can simply just call the function each time with just a simple function
+        and <strong>( )</strong> like this</p>
+  <code>callMySuperhero()</code>
+       
+    <a href="#top" class="back-top">- back to top</a>
+</div>
+<footer>
+  <p class="footer">created by © Aaron Tan | hero image taken by photographer Goran Ivos</p>
+</footer>
+  </body>
+</html>
