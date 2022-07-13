@@ -115,11 +115,6 @@ nav {
   max-height: auto;
 }
 
-.imgdescArray {
-  max-width: 400px;
-  max-height: auto;
-}
-
 
 @media only screen and (max-width: 1200px) {
   nav {
@@ -148,6 +143,11 @@ nav {
     font-size: 10px;
   
   }
+
+  iframe {
+    width: auto;
+    height: 400px ;
+  }
 }
 
 
@@ -171,6 +171,12 @@ nav {
     font-size: 10px;
   
   }
+
+  iframe {
+    width: auto;
+    height: 400px;
+  }
+
 }
 
 .dropdown {
