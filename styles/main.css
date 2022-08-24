@@ -120,6 +120,10 @@ nav {
   max-height: auto;
 }
 
+.reflections {
+  color: blue;
+}
+
 
 @media only screen and (max-width: 1200px) {
   nav {
